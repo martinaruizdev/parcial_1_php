@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(Plus_Jakarta_Sans.woff2) format('woff2');
+   }
+
+*{ /*Reseteo de CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", sans-serif; /*de 200 a 800*/
+}
+
+nav ul{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+nav ul a:hover{
+    color: #8EB812;
+    transition: .3s;
+}
+
+#hero{
+    text-align: center;
+    height: 94vh;
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*poner los elementos en cols*/
+    justify-content: center; /*centrar en eje y*/
+}
+
+h1{
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 3.3rem;
+    text-align: center;
+}
+
+#boton-hero{
+    width: 11rem;
+    height: 3.6rem;
+    align-self: center;
+    background-color: #8034FA;
+    border-radius: 12px;
+    border: none;
+}
+
+#boton-hero:hover{
+    background-color: #692bcc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#boton-hero a{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+/*planes.php*/
+
+#plan{
+    padding-bottom: 4rem;
+}
+
+#seccion-cards{
+    text-align: center;
+    height: 87vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#contenedor-cards{
+    display: flex;
+    flex-wrap: wrap; /*pone las cards una al lado de la otra y permite que salten de linea si no entran*/
+    width: 80%;
+    border: 2px solid #8034FA;
+    border-radius: 12px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+}
+
+h3{
+    font-size: 1.6rem;
+    padding: 1.4rem;
+}
+
+.card{
+    width: 280px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+}
+
+.card p{
+    text-align: left;
+    line-height: 2.3rem;
+    padding-left: 1.7rem;
+}
+
+.boton-card{
+    width: 7.4rem;
+    height: 2.6rem;
+    align-self: center;
+    background-color: #AE94FB;
+    border-radius: 12px;
+    border: none;
+    margin: 1.4rem auto 2.2rem auto;
+}
+
+.boton-card:hover{
+    background-color: #8868e9;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.boton-card a{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #212121;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#boton-verde{
+    background-color: #8EB812;
+}
+
+#boton-verde:hover{
+    background-color: #70910c;
+}
+
+#texto-chico{
+    padding-top: 3rem;
+    font-size: 14px;
+}
+
+/*suscribirse*/
+
+#section-form{
+    text-align: center;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#section-form p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contenedor-form{
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 500px;
+    margin: 2.5rem auto 0 auto;
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+    padding: 1.3rem;
+}
