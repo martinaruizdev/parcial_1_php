@@ -1,5 +1,5 @@
 <?php
-include_once("../components/header.php")
+include_once("../components/header.php");
 ?>
 <main>
     <section id="seccion-cards">
@@ -11,7 +11,7 @@ include_once("../components/header.php")
                 <p>2 dispositivos para ver en simultáneo <br>
                     Hasta 4 perfiles personalizdos <br>
                     - <br>
-                    <strong>ARS 2.500/MES</strong>
+                   <span>ARS 2.500 / MES</span>
                     </p>
                     <button class="boton-card"><a href="suscribirse.php">Comprar</a></button>
             </div>
@@ -22,7 +22,7 @@ include_once("../components/header.php")
                     4 dispositivos para ver en simultáneo <br>
                     Hasta 7 perfiles personalizdos <br>
                     Controles parentales <br>
-                    <strong>ARS 3.500/MES</strong>
+                   <span>ARS 3.500 / MES</span>
                 </p>
                 <button class="boton-card" id="boton-verde"><a href="suscribirse.php">Comprar</a></button>
             </div>
@@ -33,7 +33,7 @@ include_once("../components/header.php")
                     2 dispositivos para ver en simultáneo <br>
                     Hasta 2 perfiles personalizdos <br>
                     - <br>
-                    <strong>ARS 25.00/AÑO</strong>
+                   <span>ARS 25.000 / AÑO</span>
                 </p>
                 <button class="boton-card"><a href="suscribirse.php">Comprar</a></button>
             </div>
@@ -42,8 +42,5 @@ include_once("../components/header.php")
     </section>
 </main>
 <?php
-include_once("../components/footer.php")
+    include_once("../components/footer.php");
 ?>
-</body>
-
-</html>

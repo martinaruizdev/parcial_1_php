@@ -1,0 +1,440 @@
+@font-face {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(Plus_Jakarta_Sans.woff2) format('woff2');
+   }
+
+   *{ /*Reseteo de CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", sans-serif; /*de 200 a 800*/
+}
+
+nav ul{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+nav ul a:hover{
+    color: #8EB812;
+    transition: .3s;
+}
+
+#hero{
+    text-align: center;
+    height: 94vh;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*poner los elementos en cols*/
+    justify-content: center; /*centrar en eje y*/
+}
+
+h1{
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 3.3rem;
+    text-align: center;
+}
+
+#hero span{
+    font-weight: 600;
+}
+
+#boton-hero{
+    width: 11rem;
+    height: 3.6rem;
+    align-self: center;
+    background-color: #8034FA;
+    border-radius: 12px;
+    border: none;
+}
+
+#boton-hero:hover{
+    background-color: #692bcc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#boton-hero a{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+/*planes.php*/
+
+#plan{
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+#seccion-cards{
+    text-align: center;
+    height: 87vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#contenedor-cards{
+    display: flex;
+    flex-wrap: wrap; /*pone las cards una al lado de la otra y permite que salten de linea si no entran*/
+    width: 80%;
+    border: 2px solid #8034FA;
+    border-radius: 12px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    padding-bottom: 1.6rem;
+    padding-top: 1.9rem;
+    font-weight: 600;
+}
+
+.card{
+    width: 300px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+}
+
+.card p{
+    text-align: left;
+    line-height: 2.3rem;
+    padding-left: 2.1rem;
+    font-size: 1.1rem;
+}
+
+.card span{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.boton-card{
+    width: 7.4rem;
+    height: 2.6rem;
+    align-self: center;
+    background-color: #AE94FB;
+    border-radius: 12px;
+    border: none;
+    margin: 1.4rem auto 2.2rem auto;
+}
+
+.boton-card:hover{
+    background-color: #8868e9;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.boton-card a{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #212121;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#boton-verde{
+    background-color: #8EB812;
+}
+
+#boton-verde:hover{
+    background-color: #70910c;
+}
+
+#texto-chico{
+    font-size: 1.1rem;
+    padding-top: 3rem;
+}
+
+/*suscribirse.php*/
+
+#section-form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#suscribete{
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+}
+
+#section-form span p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#contenedor-form{
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 100%;
+    margin: 2.5rem auto 3rem auto;
+    text-align: left;
+}
+
+#contenedor-form h2{
+    text-align: left;
+    font-weight: 700;
+    margin-left: 17%;
+    margin-top: 3.4rem;
+
+}
+
+input{
+    background-color: #1E1E1E;
+    border: #2A2A2A;
+    border-radius: 10px;
+    width: 65%;
+    height: 3rem;
+    margin-bottom: 1.7rem;
+    margin-top: 0.7rem;
+    margin-left: 17%;
+    color: #fffff1;
+}
+
+label{
+    margin-left: 17%;
+    font-size: 1.2rem;
+}
+
+#form1 div{
+    display: flex;
+    flex-direction: column;
+}
+
+#form2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor{
+    flex: 1;
+}
+
+#form-izq div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5rem;
+}
+
+#form-derecha{
+    margin-left: 0;
+}
+
+#form-derecha div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#btn-form{
+    color: #212121;
+    background-color: #8EB812;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+/*contacto.php*/
+
+#contenedor-info{
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 500px;
+    margin: 2.5rem auto 3rem auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+#izq{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+#der{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+#titulo-contacto{
+    padding-top: 2rem;
+}
+
+#contenedor-info p{
+    margin-bottom: 1rem;
+}
+
+/*login.php*/
+
+#contenedor-login{
+    border-radius: 12px;
+    border: 1px solid #ffffff75;
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(40px);
+    box-shadow: 6px 8px 9px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 2.5rem auto 2rem auto;
+    text-align: left;
+}
+
+#contenedor-login h1{
+    margin-top: 2.8rem;
+    margin-bottom: 2.2rem;
+}
+
+#contraseña{
+    margin-top: .6rem;
+}
+
+#sesion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto auto auto;
+}
+
+#sesion input{
+    width: 1.6rem;
+    margin: 0 0 0 8.6rem;
+
+}
+
+#sesion label{
+    margin: 0 6rem 0 0;
+}
+
+#sesion a{
+    padding-right: 9.2rem;
+    color: #AE94FB;
+    text-decoration: none;
+}
+
+#registrate-aqui{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+#registrate-aqui a{
+    color: #8EB812;
+    text-align: center;
+}
+
+#btn-login{
+    color: #212121;
+    background-color: #8EB812;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 4.3rem;
+    margin-top: 3.5rem;
+}
+
+/*gracias.php*/
+
+#gracias h1{
+        margin-top: 2rem;
+        margin-bottom: 1.2rem;
+}
+
+#gracias p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#gracias table{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 3rem 2rem 2rem 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #2A2A2A;
+    color: #fffff1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(Plus_Jakarta_Sans.woff2) format('woff2');
+    border: 2px solid #692bcc;
+}
+
+#gracias2 h1{
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+#gracias2 table{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #2A2A2A;
+    color: #fffff1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(Plus_Jakarta_Sans.woff2) format('woff2');
+    border: 2px solid #692bcc;
+}
+
+caption{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+::placeholder{
+    padding-left: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    src: url(Plus_Jakarta_Sans.woff2) format('woff2');
+}
+
+footer{
+    font-size: 15px;
+    text-align: center;
+    padding: 1.3rem;
+}
